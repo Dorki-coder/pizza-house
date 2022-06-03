@@ -1,0 +1,93 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap");
+@import "./Components/header.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+section {
+  margin-top: 70px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  margin-top: 70px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px 20px;
+}
+
+.container {
+  margin: auto;
+  width: 1060px;
+}
+
+.btn {
+  border: none;
+  color: #ffffff;
+  padding: 9px 20px 9px 18px;
+  background: #f47700;
+  border-radius: 1000px;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e06c00;
+}
+
+.btn_secondary {
+  color: #c25f00;
+  background: #ffeddb;
+}
+
+.btn_secondary:hover {
+  color: #c25f00;
+  background: #ffdebf;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 2px;
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 9em;
+}

@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 70px;
+  display: flex;
+  background: #464c55;
+  padding: 45px 0px;
+}
+
+.footer a {
+  color: #ffffff;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 24px;
+}
+
+.logo_title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer_menu {
+  display: flex;
+}

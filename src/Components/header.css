@@ -1,0 +1,58 @@
+.nav {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline;
+  margin-right: 23px;
+}
+
+.logo_title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.logo_subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #343434;
+}
+
+.number {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #999999;
+  text-align: right;
+}
+
+a[href^="tel:"] {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+a:hover {
+  color: #f47700;
+  transition: 0.3s;
+}

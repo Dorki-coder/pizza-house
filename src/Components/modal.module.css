@@ -1,0 +1,78 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal_content {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 920px;
+  height: 610px;
+  box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
+}
+
+.modal_description_block {
+  width: 380px;
+  background: #fcfcfc;
+  overflow: auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.modal_image_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 540px;
+}
+
+.toppingCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05);
+}
+
+.toppingCard:hover {
+  border: 1px solid #f47700;
+  border-radius: 12px;
+}
+
+.toppingsList {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 13px 20px;
+}
+
+.size_selector {
+  width: 320px;
+  height: 32px;
+  margin-bottom: 14px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f3f3f7;
+}
+
+.checked {
+  display: none;
+}

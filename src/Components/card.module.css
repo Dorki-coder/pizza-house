@@ -1,0 +1,35 @@
+.card {
+  position: relative;
+}
+
+.card_img {
+  transition: 0.3s;
+}
+
+.card_img:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+.card_description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #73798c;
+  margin-bottom: 70px;
+}
+
+.price_wrapper {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_wrapper .btn {
+  margin-right: 20px;
+}
+
+
