@@ -21,6 +21,7 @@
 }
 
 .modal_description_block {
+  position: relative;
   width: 380px;
   background: #fcfcfc;
   overflow: auto;
@@ -49,16 +50,18 @@
   padding: 5px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05);
+  height: 150px;
+  transition: 0.2s;
 }
 
 .toppingCard:hover {
-  border: 1px solid #f47700;
-  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(6, 5, 50, 0.05);
 }
 
 .toppingsList {
   display: grid;
   grid-template-columns: repeat(3, 100px);
+  grid-template-rows: (120px);
   gap: 13px 20px;
 }
 
@@ -75,4 +78,28 @@
 
 .checked {
   display: none;
+}
+
+.checked:checked ~ .toppingCard {
+  border: 1px solid #f47700;
+  border-radius: 12px;
+}
+
+.modal_btn {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 51px;
+  position: fixed;
+  left: 60px;
+  bottom: 30px;
+  border: none;
+  color: #fff;
+  background: #f47700;
+  border-radius: 1000px;
+  position: sticky;
+}
+
+.label {
+  cursor: pointer;
 }

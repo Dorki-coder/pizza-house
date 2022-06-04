@@ -52,30 +52,35 @@ export default function Modal({
           <div className={s.toppingsList}>
             {productToppings.map((elem: any) => {
               return (
-                <div className={s.toppingCard}>
-                  <input
-                    className={s.checked}
-                    type="checkbox"
-                    id={elem.name}
-                    name={elem.name}
-                  />
-                  <label htmlFor={elem.name}>
-                    <img
-                      src={
-                        "https://github.com/Saint-Code-Bootcamp/pizza-house/raw/main/images/" +
-                        elem.menuImagePath
-                      }
-                      alt={elem.name}
-                      width="84"
-                      height="84"
+                <>
+                  <label>
+                    <input
+                      className={s.checked}
+                      type="checkbox"
+                      id={elem.name}
+                      name={elem.name}
                     />
-                    <p>{elem.name}</p>
-                    <p>{elem.variationPrices[0].price} ₽</p>
+                    <div className={s.toppingCard}>
+                      <label className={s.label} htmlFor={elem.name}>
+                        <img
+                          src={
+                            "https://github.com/Saint-Code-Bootcamp/pizza-house/raw/main/images/" +
+                            elem.menuImagePath
+                          }
+                          alt={elem.name}
+                          width="84"
+                          height="84"
+                        />
+                        <p>{elem.name}</p>
+                        <p>{elem.variationPrices[0].price} ₽</p>
+                      </label>
+                    </div>
                   </label>
-                </div>
+                </>
               );
             })}
           </div>
+          <button className={`btn ${s.modal_btn}`}>Добавить в корзину </button>
         </div>
       </div>
     </div>
